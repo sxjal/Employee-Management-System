@@ -17,5 +17,5 @@ require('./middleware/passport')(passport);
 const employeeRoutes = require('./routes/employees');
 app.use('/api/employees', employeeRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

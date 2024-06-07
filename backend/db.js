@@ -2,10 +2,13 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  //host: 'localhost',
+  host: '127.0.0.1',
   user: 'root',
   password: '#Mysql@0803', // Replace with your MySQL root password
-  database: 'ems',
+  database: 'EMS',
+  port: 3307,
+  socketPath: '/var/run/mysqld/mysqld.sock',
 });
 
 connection.connect(err => {
